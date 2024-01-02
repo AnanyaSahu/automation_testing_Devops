@@ -1,6 +1,5 @@
 
 import { Browser, chromium, Page } from "playwright";
-// import {SelectorConstants} from "./SelectorConstants";
 import { firefox } from "playwright/index";
 
 describe('VehicleSearchComponent', () => {
