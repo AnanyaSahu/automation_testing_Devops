@@ -1,5 +1,4 @@
-
-import { Browser, Page } from "playwright";
+import { Browser, chromium, Page } from "playwright";
 import { firefox } from "playwright/index";
 
 describe('Automation test of static web page', () => {
