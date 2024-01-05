@@ -1,9 +1,8 @@
 
-import { Browser, chromium, Page } from "playwright";
-// import {SelectorConstants} from "./SelectorConstants";
+import { Browser, Page } from "playwright";
 import { firefox } from "playwright/index";
 
-describe('VehicleSearchComponent', () => {
+describe('Automation test of static web page', () => {
     let browser: Browser;
     let page: Page;
     beforeAll(async () => {
@@ -33,7 +32,7 @@ describe('VehicleSearchComponent', () => {
         await page.waitForTimeout(5000);
     }, 100000);
 
-    it("Open page", async () => {
+    it("check heading of the page", async () => {
         let textContent: string | null;
         await page.waitForSelector('//*[@id="home"]/h2');
         page.textContent('//*[@id="home"]/h2').then(
